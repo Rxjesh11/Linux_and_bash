@@ -1,0 +1,1 @@
+-rw-r-----  1 syslog            adm             1654254 Jan 31 14:00 syslog
