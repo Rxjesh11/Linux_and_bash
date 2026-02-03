@@ -1,0 +1,14 @@
+ubuntu@ubuntu:~$ cd embedUR
+ubuntu@ubuntu:~/embedUR$ mkdir -p dir1/dir2
+ubuntu@ubuntu:~/embedUR$ cd dir1/dir2
+ubuntu@ubuntu:~/embedUR/dir1/dir2$ touch file3.txt
+ubuntu@ubuntu:~/embedUR/dir1/dir2$ ls -l
+total 0
+-rw-rw-r-- 1 ubuntu ubuntu 0 Jan 29 18:02 file3.txt
+ubuntu@ubuntu:~/embedUR/dir1/dir2$ cd ..
+ubuntu@ubuntu:~/embedUR/dir1$ ln -s dir2/file3.txt file_softlink.txt
+ubuntu@ubuntu:~/embedUR/dir1$ ls -l
+total 0
+drwxrwxr-x 2 ubuntu ubuntu 60 Jan 29 18:02 dir2
+lrwxrwxrwx 1 ubuntu ubuntu 14 Jan 29 18:03 file_softlink.txt -> dir2/file3.txt
+

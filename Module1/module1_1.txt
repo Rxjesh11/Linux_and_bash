@@ -1,0 +1,12 @@
+ubuntu@ubuntu:~$ mkdir embedUR
+ubuntu@ubuntu:~$ cd embedUR
+ubuntu@ubuntu:~/embedUR$ ls
+ubuntu@ubuntu:~/embedUR$ touch file1.txt
+ubuntu@ubuntu:~/embedUR$ ls -l
+total 0
+-rw-rw-r-- 1 ubuntu ubuntu 0 Jan 29 17:50 file1.txt
+ubuntu@ubuntu:~/embedUR$ chmod +x file1.txt
+ubuntu@ubuntu:~/embedUR$ ls -l
+total 0
+-rwxrwxr-x 1 ubuntu ubuntu 0 Jan 29 17:50 file1.txt
+

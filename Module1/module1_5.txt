@@ -1,0 +1,11 @@
+ubuntu@ubuntu:~$ cd embedUR
+ubuntu@ubuntu:~/embedUR$ mkdir dir
+ubuntu@ubuntu:~/embedUR$ cd dir
+ubuntu@ubuntu:~/embedUR/dir$ touch file1 file2 file3
+ubuntu@ubuntu:~/embedUR/dir$ cd ..
+ubuntu@ubuntu:~/embedUR$ ls -lt dir
+total 0
+-rw-rw-r-- 1 ubuntu ubuntu 0 Jan 29 18:12 file2
+-rw-rw-r-- 1 ubuntu ubuntu 0 Jan 29 18:12 file3
+-rw-rw-r-- 1 ubuntu ubuntu 0 Jan 29 18:12 file1
+

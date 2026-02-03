@@ -1,0 +1,240 @@
+ubuntu@ubuntu:~$ cd embedUR
+ubuntu@ubuntu:~/embedUR$ ps -ef
+
+UID          PID    PPID  C STIME TTY          TIME CMD
+root           1       0  0 17:39 ?        00:00:06 /sbin/init --- splas
+root           2       0  0 17:39 ?        00:00:00 [kthreadd]
+root           3       2  0 17:39 ?        00:00:00 [pool_workqueue_rele
+root           4       2  0 17:39 ?        00:00:00 [kworker/R-rcu_gp]
+root           5       2  0 17:39 ?        00:00:00 [kworker/R-sync_wq]
+root           6       2  0 17:39 ?        00:00:00 [kworker/R-kvfree_rc
+root           7       2  0 17:39 ?        00:00:00 [kworker/R-slub_flus
+root           8       2  0 17:39 ?        00:00:00 [kworker/R-netns]
+root          11       2  0 17:39 ?        00:00:00 [kworker/0:0H-events
+root          13       2  0 17:39 ?        00:00:00 [kworker/R-mm_percpu
+root          14       2  0 17:39 ?        00:00:00 [rcu_tasks_kthread]
+root          15       2  0 17:39 ?        00:00:00 [rcu_tasks_rude_kthr
+root          16       2  0 17:39 ?        00:00:00 [rcu_tasks_trace_kth
+root          17       2  0 17:39 ?        00:00:02 [ksoftirqd/0]
+root          18       2  0 17:39 ?        00:00:04 [rcu_preempt]
+root          19       2  0 17:39 ?        00:00:00 [rcu_exp_par_gp_kthr
+root          20       2  0 17:39 ?        00:00:00 [rcu_exp_gp_kthread_
+root          21       2  0 17:39 ?        00:00:00 [migration/0]
+root          22       2  0 17:39 ?        00:00:00 [idle_inject/0]
+root          23       2  0 17:39 ?        00:00:00 [cpuhp/0]
+root          24       2  0 17:39 ?        00:00:00 [cpuhp/1]
+root          25       2  0 17:39 ?        00:00:00 [idle_inject/1]
+root          26       2  0 17:39 ?        00:00:01 [migration/1]
+root          27       2  0 17:39 ?        00:00:01 [ksoftirqd/1]
+root          28       2  0 17:39 ?        00:00:01 [kworker/1:0-ata_sff
+root          29       2  0 17:39 ?        00:00:00 [kworker/1:0H-events
+root          30       2  0 17:39 ?        00:00:00 [cpuhp/2]
+root          31       2  0 17:39 ?        00:00:00 [idle_inject/2]
+root          32       2  0 17:39 ?        00:00:00 [migration/2]
+root          33       2  0 17:39 ?        00:00:03 [ksoftirqd/2]
+root          34       2  0 17:39 ?        00:00:14 [kworker/2:0-events]
+root          35       2  0 17:39 ?        00:00:00 [kworker/2:0H-events
+root          36       2  0 17:39 ?        00:00:00 [cpuhp/3]
+root          37       2  0 17:39 ?        00:00:00 [idle_inject/3]
+root          38       2  0 17:39 ?        00:00:01 [migration/3]
+root          39       2  0 17:39 ?        00:00:01 [ksoftirqd/3]
+root          41       2  0 17:39 ?        00:00:00 [kworker/3:0H-events
+root          42       2  0 17:39 ?        00:00:00 [cpuhp/4]
+root          43       2  0 17:39 ?        00:00:00 [idle_inject/4]
+root          44       2  0 17:39 ?        00:00:00 [migration/4]
+root          45       2  0 17:39 ?        00:00:01 [ksoftirqd/4]
+root          46       2  0 17:39 ?        00:00:00 [kworker/4:0-mm_perc
+root          47       2  0 17:39 ?        00:00:00 [kworker/4:0H-events
+root          48       2  0 17:39 ?        00:00:00 [kdevtmpfs]
+root          49       2  0 17:39 ?        00:00:00 [kworker/R-inet_frag
+root          50       2  0 17:39 ?        00:00:00 [kauditd]
+root          51       2  0 17:39 ?        00:00:00 [khungtaskd]
+root          52       2  0 17:39 ?        00:00:00 [oom_reaper]
+root          54       2  0 17:39 ?        00:00:00 [kworker/R-writeback
+root          56       2  0 17:39 ?        00:00:00 [kcompactd0]
+root          57       2  0 17:39 ?        00:00:00 [ksmd]
+root          58       2  0 17:39 ?        00:00:00 [khugepaged]
+root          59       2  0 17:39 ?        00:00:00 [kworker/R-kintegrit
+root          60       2  0 17:39 ?        00:00:00 [kworker/R-kblockd]
+root          61       2  0 17:39 ?        00:00:00 [kworker/R-blkcg_pun
+root          62       2  0 17:39 ?        00:00:00 [irq/9-acpi]
+root          63       2  0 17:39 ?        00:00:01 [kworker/3:1-ata_sff
+root          66       2  0 17:39 ?        00:00:00 [kworker/R-tpm_dev_w
+root          67       2  0 17:39 ?        00:00:00 [kworker/R-ata_sff]
+root          68       2  0 17:39 ?        00:00:00 [kworker/R-md]
+root          69       2  0 17:39 ?        00:00:00 [kworker/R-md_bitmap
+root          70       2  0 17:39 ?        00:00:00 [kworker/R-edac-poll
+root          71       2  0 17:39 ?        00:00:00 [kworker/R-devfreq_w
+root          72       2  0 17:39 ?        00:00:00 [watchdogd]
+root          73       2  0 17:39 ?        00:00:00 [kworker/3:1H-kblock
+root          74       2  0 17:39 ?        00:00:02 [kswapd0]
+root          75       2  0 17:39 ?        00:00:00 [ecryptfs-kthread]
+root          76       2  0 17:39 ?        00:00:00 [kworker/R-kthrotld]
+root          77       2  0 17:39 ?        00:00:00 [kworker/R-acpi_ther
+root          78       2  0 17:39 ?        00:00:00 [scsi_eh_0]
+root          79       2  0 17:39 ?        00:00:00 [kworker/R-scsi_tmf_
+root          80       2  0 17:39 ?        00:00:00 [scsi_eh_1]
+root          81       2  0 17:39 ?        00:00:00 [kworker/R-scsi_tmf_
+root          82       2  0 17:39 ?        00:00:08 [kworker/u20:3-event
+root          86       2  0 17:39 ?        00:00:00 [kworker/R-mld]
+root          87       2  0 17:39 ?        00:00:00 [kworker/R-ipv6_addr
+root          95       2  0 17:39 ?        00:00:00 [kworker/R-kstrp]
+root          97       2  0 17:39 ?        00:00:00 [kworker/u21:0]
+root         102       2  0 17:39 ?        00:00:00 [kworker/R-cryptd]
+root         111       2  0 17:39 ?        00:00:00 [kworker/R-charger_m
+root         112       2  0 17:39 ?        00:00:00 [kworker/0:1H-kblock
+root         137       2  0 17:39 ?        00:00:00 [kworker/1:1H-kblock
+root         167       2  0 17:39 ?        00:00:01 [kworker/4:1H-kblock
+root         170       2  0 17:39 ?        00:00:01 [kworker/0:2-ata_sff
+root         179       2  0 17:39 ?        00:00:00 [scsi_eh_2]
+root         180       2  0 17:39 ?        00:00:00 [kworker/R-scsi_tmf_
+root         216       2  0 17:39 ?        00:00:00 [kworker/R-raid5wq]
+root         837       1  0 17:40 ?        00:00:01 /usr/lib/systemd/sys
+root         901       1  0 17:40 ?        00:00:01 /usr/lib/systemd/sys
+root         905       2  0 17:40 ?        00:00:00 [psimon]
+root        1022       2  0 17:40 ?        00:00:00 [spl_system_task]
+root        1023       2  0 17:40 ?        00:00:00 [spl_delay_taskq]
+root        1024       2  0 17:40 ?        00:00:00 [spl_dynamic_tas]
+root        1025       2  0 17:40 ?        00:00:00 [spl_kmem_cache]
+root        1026       2  0 17:40 ?        00:00:00 [zvol_tq-0]
+root        1027       2  0 17:40 ?        00:00:00 [arc_prune]
+root        1028       2  0 17:40 ?        00:00:00 [arc_evict]
+root        1029       2  0 17:40 ?        00:00:00 [arc_reap]
+root        1030       2  0 17:40 ?        00:00:00 [dbu_evict]
+root        1031       2  0 17:40 ?        00:00:00 [dbuf_evict]
+root        1032       2  0 17:40 ?        00:00:00 [z_vdev_file]
+root        1045       2  0 17:40 ?        00:00:00 [l2arc_feed]
+root        1112       2  0 17:40 ?        00:00:04 [kworker/u20:8-event
+systemd+    1193       1  0 17:40 ?        00:00:01 /usr/lib/systemd/sys
+systemd+    1194       1  0 17:40 ?        00:00:00 /usr/lib/systemd/sys
+systemd+    1195       1  0 17:40 ?        00:00:00 /usr/lib/systemd/sys
+avahi       1437       1  0 17:40 ?        00:00:00 avahi-daemon: runnin
+message+    1438       1  0 17:40 ?        00:00:02 @dbus-daemon --syste
+gnome-r+    1441       1  0 17:40 ?        00:00:00 /usr/libexec/gnome-r
+polkitd     1444       1  0 17:40 ?        00:00:01 /usr/lib/polkit-1/po
+root        1449       1  0 17:40 ?        00:00:00 /usr/libexec/power-p
+root        1455       1  0 17:40 ?        00:00:09 /usr/lib/snapd/snapd
+root        1457       1  0 17:40 ?        00:00:00 /usr/libexec/account
+root        1460       1  0 17:40 ?        00:00:00 /usr/sbin/cron -f -P
+root        1461       1  0 17:40 ?        00:00:00 /usr/libexec/switche
+root        1464       1  0 17:40 ?        00:00:00 /usr/lib/systemd/sys
+root        1468       1  0 17:40 ?        00:00:00 zed -F
+avahi       1478    1437  0 17:40 ?        00:00:00 avahi-daemon: chroot
+root        1491       1  0 17:40 ?        00:00:01 /usr/sbin/NetworkMan
+root        1492       1  0 17:40 ?        00:00:00 /usr/sbin/wpa_suppli
+root        1511       1  0 17:40 ?        00:00:00 /usr/libexec/udisks2
+root        1582       1  0 17:40 ?        00:00:00 /usr/sbin/ModemManag
+syslog      1608       1  0 17:40 ?        00:00:00 /usr/sbin/rsyslogd -
+root        1721       1  0 17:40 ?        00:00:00 /usr/sbin/cupsd -l
+root        1723       1  0 17:40 ?        00:00:00 /usr/bin/python3 /us
+cups-br+    2001       1  0 17:40 ?        00:00:00 /usr/sbin/cups-brows
+kernoops    2010       1  0 17:40 ?        00:00:00 /usr/sbin/kerneloops
+kernoops    2016       1  0 17:40 ?        00:00:00 /usr/sbin/kerneloops
+root        2035       1  0 17:40 ?        00:00:00 /usr/sbin/gdm3
+root        2173    2035  0 17:40 ?        00:00:00 gdm-session-worker [
+ubuntu      2183       1  0 17:40 ?        00:00:02 /usr/lib/systemd/sys
+ubuntu      2186    2183  0 17:40 ?        00:00:00 (sd-pam)
+ubuntu      2201    2183  0 17:40 ?        00:00:04 /usr/bin/pipewire
+ubuntu      2204    2183  0 17:40 ?        00:00:00 /usr/bin/pipewire -c
+ubuntu      2205    2183  0 17:40 ?        00:00:01 /usr/bin/wireplumber
+ubuntu      2207    2183  0 17:40 ?        00:00:01 /usr/bin/pipewire-pu
+ubuntu      2208    2183  0 17:40 ?        00:00:00 /usr/bin/gnome-keyri
+ubuntu      2213    2183  0 17:40 ?        00:00:02 /usr/bin/dbus-daemon
+rtkit       2218       1  0 17:40 ?        00:00:00 /usr/libexec/rtkit-d
+ubuntu      2237    2173  0 17:40 tty2     00:00:00 /usr/libexec/gdm-x-s
+root        2239    2237  9 17:40 tty2     00:02:27 /usr/lib/xorg/Xorg v
+ubuntu      2342    2237  0 17:40 tty2     00:00:00 /usr/libexec/gnome-s
+ubuntu      2440    2183  0 17:40 ?        00:00:00 /usr/libexec/at-spi-
+ubuntu      2456    2440  0 17:40 ?        00:00:00 /usr/bin/dbus-daemon
+ubuntu      2505    2183  0 17:40 ?        00:00:00 /usr/libexec/gcr-ssh
+ubuntu      2506    2183  0 17:40 ?        00:00:00 /usr/libexec/gnome-s
+ubuntu      2518    2183  0 17:40 ?        00:00:00 /usr/libexec/gvfsd
+ubuntu      2532    2183  0 17:40 ?        00:00:00 /usr/libexec/gvfsd-f
+ubuntu      2562    2183  0 17:40 ?        00:00:00 /usr/libexec/gnome-s
+ubuntu      2589    2183 12 17:40 ?        00:03:04 /usr/bin/gnome-shell
+ubuntu      2643    2183  0 17:41 ?        00:00:00 /snap/snapd-desktop-
+ubuntu      2680    2589  0 17:41 ?        00:00:03 /usr/libexec/mutter-
+ubuntu      2704    2183  0 17:41 ?        00:00:00 /usr/libexec/xdg-doc
+ubuntu      2708    2183  0 17:41 ?        00:00:00 /usr/libexec/xdg-per
+root        2726    2704  0 17:41 ?        00:00:00 fusermount3 -o rw,no
+ubuntu      2752    2183  0 17:41 ?        00:00:00 /usr/libexec/at-spi2
+colord      2753       1  0 17:41 ?        00:00:00 /usr/libexec/colord
+ubuntu      2960    2183  0 17:41 ?        00:00:00 /usr/libexec/gnome-s
+ubuntu      2974    2183  0 17:41 ?        00:00:01 /usr/libexec/evoluti
+ubuntu      2982    2183  0 17:41 ?        00:00:00 /usr/libexec/dconf-s
+ubuntu      2983    2643  0 17:41 ?        00:00:02 /snap/snapd-desktop-
+ubuntu      2994    2183  0 17:41 ?        00:00:00 /usr/bin/gjs -m /usr
+root        2997       1  0 17:41 ?        00:00:00 /usr/libexec/upowerd
+ubuntu      3026    2183  0 17:41 ?        00:00:12 /usr/bin/ibus-daemon
+ubuntu      3027    2183  0 17:41 ?        00:00:00 /usr/libexec/gsd-a11
+ubuntu      3028    2183  0 17:41 ?        00:00:00 /usr/libexec/gsd-col
+ubuntu      3030    2183  0 17:41 ?        00:00:00 /usr/libexec/gsd-dat
+ubuntu      3031    2183  0 17:41 ?        00:00:00 /usr/libexec/gsd-hou
+ubuntu      3035    2183  0 17:41 ?        00:00:00 /usr/libexec/gsd-key
+ubuntu      3037    2183  0 17:41 ?        00:00:00 /usr/libexec/gsd-med
+ubuntu      3038    2183  0 17:41 ?        00:00:00 /usr/libexec/gsd-pow
+ubuntu      3039    2183  0 17:41 ?        00:00:00 /usr/libexec/gsd-pri
+ubuntu      3040    2183  0 17:41 ?        00:00:00 /usr/libexec/gsd-rfk
+ubuntu      3042    2183  0 17:41 ?        00:00:00 /usr/libexec/gsd-scr
+ubuntu      3043    2183  0 17:41 ?        00:00:00 /usr/libexec/gsd-sha
+ubuntu      3050    2183  0 17:41 ?        00:00:00 /usr/libexec/gsd-sma
+ubuntu      3051    2183  0 17:41 ?        00:00:00 /usr/libexec/gsd-sou
+ubuntu      3052    2183  0 17:41 ?        00:00:00 /usr/libexec/gsd-wac
+ubuntu      3053    2183  0 17:41 ?        00:00:00 /usr/libexec/gsd-xse
+ubuntu      3100    2562  0 17:41 ?        00:00:00 /usr/libexec/gsd-dis
+ubuntu      3102    2562  0 17:41 ?        00:00:01 /usr/libexec/evoluti
+ubuntu      3289    2183  0 17:41 ?        00:00:00 /usr/libexec/gsd-pri
+ubuntu      3299    2183  0 17:41 ?        00:00:00 /usr/libexec/gvfs-ud
+ubuntu      3313    2183  0 17:41 ?        00:00:00 /usr/libexec/goa-dae
+root        3321       2  0 17:41 ?        00:00:00 [psimon]
+ubuntu      3326    2183  0 17:41 ?        00:00:00 /usr/libexec/goa-ide
+root        3330       1  0 17:41 ?        00:00:00 /bin/bash /snap/ubun
+ubuntu      3331    2183  0 17:41 ?        00:00:00 /usr/libexec/gvfs-mt
+ubuntu      3368    2183  0 17:41 ?        00:00:00 /usr/libexec/gvfs-gp
+ubuntu      3409    2183  0 17:41 ?        00:00:00 /usr/libexec/gvfs-go
+ubuntu      3429    2183  0 17:41 ?        00:00:00 /usr/libexec/evoluti
+ubuntu      3431    2183  0 17:41 ?        00:00:00 /usr/libexec/gvfs-af
+root        3449    3330  0 17:41 ?        00:00:10 /snap/ubuntu-desktop
+ubuntu      3456    2183  0 17:41 ?        00:00:00 /usr/bin/gjs -m /usr
+ubuntu      3479    2183  0 17:41 ?        00:00:00 /usr/libexec/evoluti
+ubuntu      3562    3026  0 17:41 ?        00:00:00 /usr/libexec/ibus-dc
+ubuntu      3563    3026  0 17:41 ?        00:00:03 /usr/libexec/ibus-ex
+ubuntu      3568    2183  0 17:41 ?        00:00:00 /usr/libexec/ibus-x1
+ubuntu      3571    2183  0 17:41 ?        00:00:00 /usr/libexec/ibus-po
+ubuntu      3572    2183  0 17:41 ?        00:00:02 /usr/libexec/tracker
+ubuntu      3577    2518  0 17:41 ?        00:00:00 /usr/libexec/gvfsd-t
+ubuntu      3643    3026  0 17:41 ?        00:00:03 /usr/libexec/ibus-en
+ubuntu      3682    2183  0 17:41 ?        00:00:00 /usr/libexec/xdg-des
+ubuntu      3700    2183  0 17:41 ?        00:00:01 /usr/libexec/xdg-des
+ubuntu      3759    2183  0 17:41 ?        00:00:00 /usr/libexec/xdg-des
+root        4001       2  0 17:41 ?        00:00:00 [kworker/R-xfsalloc]
+root        4002       2  0 17:41 ?        00:00:00 [kworker/R-xfs_mru_c
+root        4008       2  0 17:41 ?        00:00:00 [jfsIO]
+root        4009       2  0 17:41 ?        00:00:00 [jfsCommit]
+root        4010       2  0 17:41 ?        00:00:00 [jfsCommit]
+root        4011       2  0 17:41 ?        00:00:00 [jfsCommit]
+root        4012       2  0 17:41 ?        00:00:00 [jfsCommit]
+root        4013       2  0 17:41 ?        00:00:00 [jfsCommit]
+root        4014       2  0 17:41 ?        00:00:00 [jfsSync]
+ubuntu      4419    2589  0 17:41 ?        00:00:03 gjs /usr/share/gnome
+ubuntu      4446    2183  0 17:41 ?        00:00:00 /usr/libexec/gvfsd-m
+ubuntu      4514    2518  0 17:41 ?        00:00:00 /usr/libexec/gvfsd-r
+ubuntu      4526    2562  0 17:42 ?        00:00:00 /usr/bin/update-noti
+root        4617       2  0 17:42 ?        00:00:00 [kworker/2:2H-kblock
+ubuntu      5164    2183  0 17:44 ?        00:00:00 /usr/bin/snap userd
+ubuntu      6247    2183  1 17:49 ?        00:00:12 /usr/libexec/gnome-t
+ubuntu      6259    6247  0 17:49 pts/0    00:00:00 bash
+root        6357       2  0 17:50 ?        00:00:00 [kworker/1:2]
+ubuntu      6387    2183  0 17:52 ?        00:00:08 /usr/bin/nautilus --
+root        6465       2  0 17:52 ?        00:00:00 [kworker/4:2]
+root        6506       2  0 17:58 ?        00:00:00 [kworker/0:1]
+root        6532       2  0 17:59 ?        00:00:00 [kworker/2:2]
+root        6593       2  0 18:00 ?        00:00:00 [kworker/3:0]
+root        6629       2  0 18:00 ?        00:00:00 [kworker/u20:1-loop0
+root        6738       1  0 18:00 ?        00:00:01 /usr/libexec/fwupd/f
+ubuntu      6788    6259  0 18:01 pts/0    00:00:00 script demo3.txt
+ubuntu      6789    6788  0 18:01 pts/1    00:00:00 bash -i
+ubuntu      6909    6789  0 18:05 pts/1    00:00:00 script demo4.txt
+ubuntu      6910    6909  0 18:05 pts/2    00:00:00 bash -i
+ubuntu      6923    6910 99 18:06 pts/2    00:00:00 ps -ef
+
