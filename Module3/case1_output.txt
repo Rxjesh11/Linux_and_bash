@@ -1,0 +1,19 @@
+// The provided two .txt files are backed up and stored in backup directory and the report log is in backup_report.log
+
+The source directory is /home/rajesh/embedUR/Module3/source
+The backup directory is /home/rajesh/embedUR/Module3/backup/
+The files to be searched is .txt files
+
+Files to be backed up:
+demo1.txt - 14 bytes
+
+demo2.txt - 26 bytes
+
+Backup Summary Report
+Total files backed up : 2
+Total size backed up  : 40 bytes
+Backup directory      : /home/rajesh/embedUR/Module3/backup/
+Date                  : Tue Feb  3 08:24:33 AM IST 2026
+
+Backup completed successfully
+Report saved at: /home/rajesh/embedUR/Module3/backup//backup_report.log

@@ -1,0 +1,7 @@
+// No .pdf files are found in the source directory
+
+The source directory is /home/rajesh/embedUR/Module3/source
+The backup directory is /home/rajesh/embedUR/Module3/backup/
+The files to be searched is .pdf files
+
+No files found with extension .pdf
