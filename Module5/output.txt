@@ -1,0 +1,57 @@
+
+If the provided directory is not found........
+
+Script name       : ./file_analyzer.sh
+Total arguments   : 4
+All arguments     : -d demo_dir3 -k ERROR
+[Fri Feb  6 08:19:26 AM IST 2026] Directory not found: demo_dir3
+----------------------------------------------------------------------------------
+
+If the provided directory exists with the  existing file contains the keyword ERROR............
+
+Script name       : ./file_analyzer.sh
+Total arguments   : 4
+All arguments     : -d demo_dir1 -k ERROR
+Searching directory 'demo_dir1' for 'ERROR'...
+Match found in: demo_dir1/demo_file1.txt
+Exit status: 0
+-----------------------------------------------------------------------------------
+
+If the provided file exists contains with the keyword given...........
+
+Script name       : ./file_analyzer.sh
+Total arguments   : 4
+All arguments     : -f demo_file2.txt -k Linux
+Searching file 'demo_file2.txt' for 'Linux'...
+Hello this is Linux and shell programming
+Exit status: 0
+----------------------------------------------------------------------------------
+
+If the user asks manual for help...
+
+Script name       : ./file_analyzer.sh
+Total arguments   : 4
+All arguments     : -f demo_file4.txt -k Linux
+Usage: ./file_analyzer.sh [OPTIONS]
+
+Options:
+  -d <directory>   Recursively search a directory
+  -f <file>        Search keyword in a specific file
+  -k <keyword>     Keyword to search
+  --help           Display this help menu
+
+Examples:
+  ./file_analyzer.sh -d logs -k error
+  ./file_analyzer.sh -f script.sh -k TODO
+-------------------------------------------------------------------------------------
+
+If the file doesn't exists......
+
+[Fri Feb  6 08:23:17 AM IST 2026] File not found: demo_file4.txt
+
+-------------------------------------------------------------------------------
+
+If the argument passed is invalid.......
+[Fri Feb  6 08:21:31 AM IST 2026] Invalid or empty keyword
+
+--------------------------------------------------------------------------------
